@@ -1,0 +1,21 @@
+{
+  "name": "map-filter-reduce-exercises",
+  "version": "1.0.0",
+  "description": "Let's practice using `map`, `filter`, and `reduce`!",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "test:every": "nodemon ./node_modules/.bin/mocha ./d_every",
+    "test:filter": "nodemon ./node_modules/.bin/mocha ./b_filter",
+    "test:map": "nodemon ./node_modules/.bin/mocha ./a_map",
+    "test:reduce": "nodemon ./node_modules/.bin/mocha ./c_reduce",
+    "test:some": "nodemon ./node_modules/.bin/mocha ./e_some",
+    "test:zoo": "nodemon ./node_modules/.bin/mocha ./f_zoo"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4"
+  }
+}
