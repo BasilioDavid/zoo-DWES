@@ -1,17 +1,40 @@
 function sum(array) {
-  // your code here
+  return array.reduce(
+    ( acc, value ) => acc + value,
+    0
+  )
 }
 
 function productAll(array) {
-  // your code here
+  return array.reduce(
+    ( result, numbers ) => result * numbers.reduce(
+      ( resultMatrix, number ) => resultMatrix * number,
+      1
+    ),
+    1
+  )
 }
 
 function objectify(array) {
-  // your code here
+  return array.reduce(
+    ( objectResult, [key, value] ) =>  ({...objectResult, 
+                                                              [key] : value})
+      // const obj = {...acc};
+      // obj[name] = decade;
+      // return obj;
+    ,
+    {}
+  )
 }
 
 function luckyNumbers(array) {
-  // your code here
+  return array.reduce(
+    ( sentence, number, index, mappedArray ) => {
+      sentence += index === mappedArray.length - 1 ? `and ${number}` : `${number}, `;
+      return sentence;
+    },
+    "Your lucky numbers are: "
+  )
 }
 
 module.exports = {

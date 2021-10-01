@@ -1,0 +1,27 @@
+{
+	// Use IntelliSense para saber los atributos posibles.
+	// Mantenga el puntero para ver las descripciones de los existentes atributos.
+	// Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+	{
+		"name": "Zoo",
+		"program": "${workspaceFolder}/f_zoo/core.js",
+		"request": "launch",
+		"skipFiles": [
+			"<node_internals>/**"
+		],
+		"type": "pwa-node"
+	},
+	
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "B filter",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/b_filter/core.js"
+		}
+	]
+}

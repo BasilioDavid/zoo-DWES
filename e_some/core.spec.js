@@ -10,13 +10,16 @@ describe("core", function() {
     assert.equal(core.anyGreaterThan10(badInput), false);
   });
 
-  it("#longWord", function() {
-    const goodInput = ["democracy", "aristocracy"];
-    assert.equal(core.longWord(goodInput), true);
+  // describe("#longWord", function () {
+    it("#longWord", function() {
+      const goodInput = ["democracy", "aristocracy"];
+      assert.equal(core.longWord(goodInput), true);
 
-    const badInput = ["democracy", "republic"];
-    assert.equal(core.longWord(badInput), false);
-  });
+      const badInput = ["democracy", "republic"];
+      assert.equal(core.longWord(badInput), false);
+    });
+  // });
+  
 
   it("#truePossibilities", function() {
     const goodInput = [
